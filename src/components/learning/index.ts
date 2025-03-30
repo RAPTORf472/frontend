@@ -1,0 +1,16 @@
+export { MaterialHeader } from './material-header'
+export { EngagementBar } from './engagement-bar'
+export { AuthorBio } from './author-bio'
+export { TableOfContents } from './table-of-contents'
+export { Comments, type CommentData } from './comments-section'
+export { RelatedMaterials, type RelatedMaterial } from './related-materials'
+export { MaterialInfo, AnimatedMaterialInfo } from './material-info'
+
+// Export types
+export type { MaterialHeaderProps } from './material-header'
+export type { EngagementBarProps } from './engagement-bar'
+export type { AuthorBioProps } from './author-bio'
+export type { TableOfContentsProps, TableOfContentsItem } from './table-of-contents'
+export type { CommentsProps } from './comments-section'
+export type { RelatedMaterialsProps } from './related-materials'
+export type { MaterialInfoProps } from './material-info' 
