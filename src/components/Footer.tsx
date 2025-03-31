@@ -88,12 +88,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/donate" className="transition-colors hover:text-white">
-                  Donate
-                </Link>
-              </li>
-              <li>
-                <Link href="/learn" className="transition-colors hover:text-white">
+                <Link href="/learning" className="transition-colors hover:text-white">
                   Learning Resources
                 </Link>
               </li>
