@@ -27,7 +27,7 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
       const cleanToken = token.startsWith('Bearer ') ? token.slice(7) : token
 
       const newSocket = socketIOClient(process.env.NEXT_PUBLIC_BACKEND_URL || "", {
-        transports: ['websocket'],
+        transports: ["polling"], // Switch to long polling
         reconnection: true,
         reconnectionAttempts: Infinity,
         reconnectionDelay: 1000,
