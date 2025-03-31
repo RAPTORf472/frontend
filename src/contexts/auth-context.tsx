@@ -184,7 +184,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       localStorage.setItem('user', JSON.stringify(data.user));
       setUser(data.user);
       setIsAuthenticated(true);
-      router.push('/dashboard');
+      router.push('/profile');
     } catch (error) {
       console.error('Registration error:', error);
       throw error;
