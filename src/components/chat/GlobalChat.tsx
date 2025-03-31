@@ -410,7 +410,7 @@ export function GlobalChat() {
                 await new Promise<void>((resolve, reject) => {
           const timeout = setTimeout(() => {
             reject(new Error('Socket connection timeout'))
-          }, 5000)
+          }, 25000)
 
           socket.once('connect', () => {
             clearTimeout(timeout)
