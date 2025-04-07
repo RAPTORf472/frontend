@@ -48,6 +48,7 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
       })
 
       newSocket.on('disconnect', (reason: string) => {
+        console.log(newSocket)
         console.log('Disconnected from Socket.IO server:', reason)
         setIsConnected(false)
       })
